@@ -1,2 +1,2 @@
 # personal-website
-Personal website for projects and testing using React.
+Personal website for projects and testing using React and Netlify.
