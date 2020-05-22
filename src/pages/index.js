@@ -1,8 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../../public/static/bootstrap/css/theme/lux/bootstrap.css"
-import "../../public/static/css/responsive.css"
+// import "../../public/static/bootstrap/css/theme/lux/bootstrap.css"
+// import "../../public/static/css/responsive.css"
+import "./bootstrap.css"
+import "./responsive.css"
 
 const IndexPage = () => (
   <Layout about="nav-link active" reflection="nav-link" resume="nav-link" projects="nav-link">
