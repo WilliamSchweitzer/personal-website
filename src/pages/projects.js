@@ -14,8 +14,8 @@ const ProjectsPage = () => (
           <h6 class="card-subtitle text-muted">willschweitzer.io - This website <span role="img" alt="Smiley Face" aria-label="Emoji">&#128540;</span></h6>
         </div>
         <div class="card-body">
-          <img class="mx-auto" style={{maxWidth: "50%", height: "auto"}} src="/static/images/gatsby-logo.png" alt="Gatsby Logo" />
-          <img class="mx-auto float-left" style={{maxWidth: "50%", height: "auto"}} src="/static/images/netlify-logo.png" alt="Netlify Logo" />
+          <img class="mx-auto" style={{maxWidth: "50%", height: "auto"}} src="/../../gatsby-logo.png" alt="Gatsby Logo" />
+          <img class="mx-auto float-left" style={{maxWidth: "50%", height: "auto"}} src="/../../netlify-logo.png" alt="Netlify Logo" />
         </div>
         <div class="card-body">
           <p class="card-text">
@@ -38,7 +38,7 @@ const ProjectsPage = () => (
       <div class="card border-primary mb-3">
         <h3 class="card-header">Senior Design Porject - Auditory Horizons</h3>
         <div class="card-body">
-          <img class="mx-auto" style={{maxWidth: "100%", height: "auto"}} src="/static/images/poster-final.png" alt="Senior Design Expo Poster" />
+          <img class="mx-auto" style={{maxWidth: "100%", height: "auto"}} src="/../../poster-final.png" alt="Senior Design Expo Poster" />
         </div>
         <div class="card-body">
           <p class="card-text">
@@ -59,8 +59,8 @@ const ProjectsPage = () => (
           <h6 class="card-subtitle text-muted">willschweitzer.io - This website <span role="img" alt="Smiley Face" aria-label="Emoji">&#128540;</span></h6>
         </div>
         <div class="card-body">
-          <img class="mx-auto" style={{maxWidth: "50%", height: "auto"}} src="/static/images/amazon-logo.png" alt="AWS Logo" />
-          <img class="mx-auto float-left" style={{maxWidth: "50%", height: "auto", marginTop: "13%"}} src="/static/images/nodejs-logo.png" alt="Node.js Logo" />
+          <img class="mx-auto" style={{maxWidth: "50%", height: "auto"}} src="/../../amazon-logo.png" alt="AWS Logo" />
+          <img class="mx-auto float-left" style={{maxWidth: "50%", height: "auto", marginTop: "13%"}} src="/../../nodejs-logo.png" alt="Node.js Logo" />
         </div>
         <div class="card-body">
           <p class="card-text">

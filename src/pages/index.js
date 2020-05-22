@@ -13,7 +13,7 @@ const IndexPage = () => (
         <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
           <div class="card text-white bg-primary mb-3 profile-contianer">
             <div class="card-body">
-              <img class="rounded" style={{height: "auto", maxWidth: "100%", display: "block"}} src="/static/images/profile-noloop.gif" alt="Will Schweiter in GIF form!" />
+              <img class="rounded" style={{height: "auto", maxWidth: "100%", display: "block"}} src="/../../profile-noloop.gif" alt="Will Schweiter in GIF form!" />
             </div>
           </div>
           <div class="profile-contianer">
@@ -29,7 +29,7 @@ const IndexPage = () => (
               <h4 class="alert-heading">Internship:</h4>
               <p class="mb-0">I am actively seeking an internship for the summer of 2020, feel free to contact me!</p>
             </div> --> */}
-            <a download class="btn btn-primary btn-lg" href="/static/images/will-schweitzer-resume.pdf" style={{width: "100%", marginBottom: "1rem"}}>
+            <a download class="btn btn-primary btn-lg" href="/../../will-schweitzer-resume.pdf" style={{width: "100%", marginBottom: "1rem"}}>
               Download Resume
             </a>
             <a class="btn btn-info btn-lg" href="https://www.linkedin.com/in/william-schweitzer" style={{width: "100%", marginBottom: "1rem"}}>
@@ -58,7 +58,7 @@ const IndexPage = () => (
         </p>
         <div style={{display: "flex", justifyContent: "space-evenly", flexFlow: "wrap"}}>
         <div class="card" style={{width: "18rem", margin: "1rem"}}>
-          <img class="card-img-top" src="/static/images/lendogram-logo.png" alt="Foxsports" style={{height: "165.06px"}} />
+          <img class="card-img-top" src="/../../lendogram-logo.png" alt="Foxsports" style={{height: "165.06px"}} />
           <div class="card-body">
             <h5 class="card-title">Lendogram</h5>
             <h6 class="card-subtitle mb-2 text-muted">International Co-op</h6>
@@ -67,7 +67,7 @@ const IndexPage = () => (
           </div>
         </div>
         <div class="card" style={{width: "18rem", margin: "1rem"}}>
-          <img class="card-img-top" src="/static/images/foxsports.webp" alt="Foxsports" />
+          <img class="card-img-top" src="/../foxsports.webp" alt="Foxsports" />
           <div class="card-body">
             <h5 class="card-title">Fox Sports</h5>
             <h6 class="card-subtitle mb-2 text-muted">Software Engineer</h6>
@@ -76,7 +76,7 @@ const IndexPage = () => (
           </div>
         </div>
         <div class="card" style={{width: "18rem", margin: "1rem"}}>
-          <img class="card-img-top" src="/static/images/foxsports.webp" alt="Fox Sports" />
+          <img class="card-img-top" src="/../foxsports.webp" alt="Fox Sports" />
           <div class="card-body">
             <h5 class="card-title">Fox Sports</h5>
             <h6 class="card-subtitle mb-2 text-muted">Software Engineer</h6>
@@ -85,7 +85,7 @@ const IndexPage = () => (
           </div>
         </div>
         <div class="card" style={{width: "18rem", margin: "1rem"}}>
-          <img class="card-img-top" src="/static/images/foxsports.webp" alt="Fox Sports" />
+          <img class="card-img-top" src="/../foxsports.webp" alt="Fox Sports" />
           <div class="card-body">
             <h5 class="card-title">Fox Sports</h5>
             <h6 class="card-subtitle mb-2 text-muted">Software Engineer</h6>

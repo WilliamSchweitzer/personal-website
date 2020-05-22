@@ -13,7 +13,7 @@ const ResumePage = () => (
     <SEO title="Resume" />
     <div class="jumbotron">
       <Document
-            file="/static/images/will-schweitzer-resume.pdf"
+            file="/../../will-schweitzer-resume.pdf"
           >
             <Page pageNumber={pageNumber} />
           </Document>
