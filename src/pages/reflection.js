@@ -7,7 +7,7 @@ const ReflectionPage = () => (
   <Layout about="nav-link" reflection="nav-link active" active resume="nav-link" projects="nav-link">
     <SEO title="Reflection" />
     
-    <div class="jumbotron">
+    <div class="container">
       <div class="card text-white bg-primary mb-3" style={{maxWidth: "100%"}}>
         <div class="card-body">
           <h4 class="card-title">Summative Reflection</h4>
