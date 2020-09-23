@@ -6,7 +6,7 @@ import SEO from "../../components/seo"
 const WebsiteProjectPage = () => (
   <Layout about="nav-link" reflection="nav-link" resume="nav-link" projects="nav-link active">
     <SEO title="Website" />
-    <div class="jumbotron">
+    <div class="container">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/projects">Projects</a></li>
         <li class="breadcrumb-item active">Website</li>
