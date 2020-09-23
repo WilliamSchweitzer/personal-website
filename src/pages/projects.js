@@ -6,7 +6,7 @@ const ProjectsPage = () => (
   <Layout about="nav-link" reflection="nav-link" active resume="nav-link" projects="nav-link active">
     <SEO title="Projects" />
     
-    <div class="jumbotron">
+    <div class="container">
     <div class="card border-primary mb-3">
         <h3 class="card-header">About Me Website - Netlify + Gatsby Migration</h3>
         <div class="card-body">
