@@ -9,7 +9,7 @@ import "./responsive.css"
 const IndexPage = () => (
   <Layout about="nav-link active" reflection="nav-link" resume="nav-link" projects="nav-link">
     <SEO title="About" />
-    <div class="jumbotron-fluid" style={{padding: "15px"}}>
+    <div class="container" style={{padding: "15px"}}>
         <div style={{display: "flex", flexWrap: "wrap", justifyContent: "space-between"}}>
           <div class="card text-white bg-primary mb-3 profile-contianer">
             <div class="card-body">
