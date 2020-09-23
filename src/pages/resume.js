@@ -11,7 +11,7 @@ const numPages = 1;
 const ResumePage = () => (
   <Layout about="nav-link" reflection="nav-link" resume="nav-link active" projects="nav-link">
     <SEO title="Resume" />
-    <div class="jumbotron">
+    <div class="container">
       <Document
             file="/../../will-schweitzer-resume.pdf"
           >
