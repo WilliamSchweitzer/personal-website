@@ -25,10 +25,10 @@ const IndexPage = () => (
             </div>
           </div>
           <div class="profile-contianer">
-            {/* <!-- <div class="alert alert-info" role="alert">
-              <h4 class="alert-heading">Internship:</h4>
-              <p class="mb-0">I am actively seeking an internship for the summer of 2020, feel free to contact me!</p>
-            </div> --> */}
+            <div class="alert alert-info" role="alert">
+              <h4 class="alert-heading">Employment:</h4>
+              <p class="mb-0">I am actively seeking new seeking software development opportunities, feel free to contact me!</p>
+            </div>
             <a download class="btn btn-primary btn-lg" href="/../../will-schweitzer-resume.pdf" style={{width: "100%", marginBottom: "1rem"}}>
               Download Resume
             </a>
@@ -98,7 +98,7 @@ const IndexPage = () => (
       {/* <p>Feel free to contact me!</p>
       <p class="lead">
         <a class="btn btn-primary btn-lg"  data-toggle="modal" href="#signupModal">Contact Me</a>
-      </p> */}
+      </p>  */}
 
       </div>
   </Layout>
