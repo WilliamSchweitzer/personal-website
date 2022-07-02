@@ -27,7 +27,7 @@ const IndexPage = () => (
           <div class="profile-contianer">
             <div class="alert alert-info" role="alert">
               <h4 class="alert-heading">Employment:</h4>
-              <p class="mb-0">I am actively seeking new seeking software development opportunities, feel free to contact me!</p>
+              <p class="mb-0">I am actively seeking new seeking software engineering opportunities, feel free to contact me on Linkedin!</p>
             </div>
             <a download class="btn btn-primary btn-lg" href="/../../will-schweitzer-resume.pdf" style={{width: "100%", marginBottom: "1rem"}}>
               Download Resume
@@ -48,9 +48,9 @@ const IndexPage = () => (
         <p class="lead">
           My main passions lie in Application Development, Cloud Computing, and Video Games. It is my goal to gain a greater understanding of Computer Science to contribute to the advancement of these technologies to enrich the lives of others.
         </p>
-        <p class="lead">
+        {/* <p class="lead">
           My current strengths lie in AGILE(scrum) Web Development using the .NET MVC Framework, Preact.js with TypeScript, SQL, Node, NPM, HTML/CSS, Azure Dev Ops, Git, as well as many other interwoven pieces.
-        </p>
+        </p> */}
         <div style={{display: "flex", justifyContent: "space-evenly", flexFlow: "wrap"}}>
         <div class="card" style={{width: "18rem", margin: "1rem"}}>
           <img class="card-img-top" src="/../../tcs_logo.png" alt="TCS" style={{height: "165.06px"}} />
@@ -58,7 +58,7 @@ const IndexPage = () => (
             <h5 class="card-title">Tata Consultancy Services - TCS</h5>
             <h6 class="card-subtitle mb-2 text-muted">Software Engineer</h6>
             <h6 class="card-subtitle mb-2 text-muted">Feb 2021 - Present</h6>
-            <p class="card-text">I have been working with the client, Kroger, for over a year now. Some technologis I have been exposed to include, Grafana, Dynatrace, GCP, ELK Stack, Xcode, Swift, React, Rancher, Kubernetes, etc.</p>
+            <p class="card-text">I have been working with the client Kroger for over a year now. Some technologies I have been exposed to include Grafana, Dynatrace, GCP, ELK Stack, Xcode, Swift, React, Rancher, Kubernetes, etc.</p>
           </div>
         </div>
         </div>

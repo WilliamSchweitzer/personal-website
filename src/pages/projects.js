@@ -7,6 +7,34 @@ const ProjectsPage = () => (
     <SEO title="Projects" />
     
     <div class="container">
+    <div class="card text-white bg-primary mb-3" style={{maxWidth: "100%"}}>
+        <div class="card-body">
+          <h4 class="card-title">Projects</h4>
+          <p class="card-text">Welcome to my projects view! Below, find projects I have either completed or am currently working on.</p>
+        </div>
+      </div>
+      <div class="card border-primary mb-3">
+        <h3 class="card-header">iOS Datastructures APP - Swift</h3>
+        <div class="card-body">
+          <h5 class="card-title">Learning Goal: Implemnting Core Data Structures</h5>
+          <h6 class="card-subtitle text-muted">Source Code: https://github.com/WilliamSchweitzer/DataStructuresIosCore<span role="img" alt="Smiley Face" aria-label="Emoji">&#128540;</span></h6>
+        </div>
+        <div class="card-body">
+          <img class="mx-auto" style={{maxWidth: "50%", height: "auto"}} src="/../../gatsby-logo.png" alt="Gatsby Logo" />
+          <img class="mx-auto float-left" style={{maxWidth: "50%", height: "auto"}} src="/../../netlify-logo.png" alt="Netlify Logo" />
+        </div>
+        <div class="card-body">
+          <p class="card-text">
+            Still under development.
+          </p>
+          <p class="card-text">
+            WIP
+          </p>
+        </div>
+        <div class="card-footer text-muted">
+          Jul 02, 2022
+        </div>
+      </div>
     <div class="card border-primary mb-3">
         <h3 class="card-header">About Me Website - Netlify + Gatsby Migration</h3>
         <div class="card-body">
@@ -27,12 +55,6 @@ const ProjectsPage = () => (
         </div>
         <div class="card-footer text-muted">
           May 22, 2020
-        </div>
-      </div>
-      <div class="card text-white bg-primary mb-3" style={{maxWidth: "100%"}}>
-        <div class="card-body">
-          <h4 class="card-title">Projects</h4>
-          <p class="card-text">Welcome to my projects view! Below, find projects I have either completed or am currently working on.</p>
         </div>
       </div>
       <div class="card border-primary mb-3">
