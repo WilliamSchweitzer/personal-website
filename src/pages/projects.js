@@ -17,12 +17,12 @@ const ProjectsPage = () => (
         <h3 class="card-header">iOS Datastructures APP - Swift</h3>
         <div class="card-body">
           <h5 class="card-title">Learning Goal: Implemnting Core Data Structures</h5>
-          <h6 class="card-subtitle text-muted">Source Code: https://github.com/WilliamSchweitzer/DataStructuresIosCore<span role="img" alt="Smiley Face" aria-label="Emoji">&#128540;</span></h6>
+          <h6 class="card-subtitle text-muted">Source Code: https://github.com/WilliamSchweitzer/DataStructuresIosCore</h6>
         </div>
-        <div class="card-body">
+        {/* <div class="card-body">
           <img class="mx-auto" style={{maxWidth: "50%", height: "auto"}} src="/../../gatsby-logo.png" alt="Gatsby Logo" />
           <img class="mx-auto float-left" style={{maxWidth: "50%", height: "auto"}} src="/../../netlify-logo.png" alt="Netlify Logo" />
-        </div>
+        </div> */}
         <div class="card-body">
           <p class="card-text">
             Still under development.
