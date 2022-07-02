@@ -41,9 +41,9 @@ const IndexPage = () => (
           </div>
         </div>
         <hr />
-        <h4 class="text-primary">"Elevator Pitch"</h4>
+        <h4 class="text-primary">Professional Experience</h4>
         <p class="lead">
-          I am currently in my 5th year at the University of Cincinnati, working towards a bachelor's of Science in Computer Science. A critical aspect of my personality is the idea of lifelong education gained through my hard work as well as the experiences of those surrounding me.
+          I am currently working fulltime at Tata Consultancy Services (TCS). A critical aspect of my personality is the idea of lifelong education gained through my hard work as well as the experiences of those surrounding me.
         </p>
         <p class="lead">
           My main passions lie in Application Development, Cloud Computing, and Video Games. It is my goal to gain a greater understanding of Computer Science to contribute to the advancement of these technologies to enrich the lives of others.
@@ -51,6 +51,17 @@ const IndexPage = () => (
         <p class="lead">
           My current strengths lie in AGILE(scrum) Web Development using the .NET MVC Framework, Preact.js with TypeScript, SQL, Node, NPM, HTML/CSS, Azure Dev Ops, Git, as well as many other interwoven pieces.
         </p>
+        <div style={{display: "flex", justifyContent: "space-evenly", flexFlow: "wrap"}}>
+        <div class="card" style={{width: "18rem", margin: "1rem"}}>
+          <img class="card-img-top" src="/../../tcs_logo.png" alt="TCS" style={{height: "165.06px"}} />
+          <div class="card-body">
+            <h5 class="card-title">Tata Consultancy Services - TCS</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Software Engineer</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Feb 2021 - Present</h6>
+            <p class="card-text">I have been working with the client, Kroger, for over a year now. Some technologis I have been exposed to include, Grafana, Dynatrace, GCP, ELK Stack, Xcode, Swift, React, Rancher, Kubernetes, etc.</p>
+          </div>
+        </div>
+        </div>
         <hr class="my-4" />
         <h4 class="text-primary">Co-op Experiences</h4>
         <p class="lead">
@@ -58,7 +69,7 @@ const IndexPage = () => (
         </p>
         <div style={{display: "flex", justifyContent: "space-evenly", flexFlow: "wrap"}}>
         <div class="card" style={{width: "18rem", margin: "1rem"}}>
-          <img class="card-img-top" src="/../../lendogram-logo.png" alt="Foxsports" style={{height: "165.06px"}} />
+          <img class="card-img-top" src="/../../lendogram-logo.png" alt="Lendogram" style={{height: "165.06px"}} />
           <div class="card-body">
             <h5 class="card-title">Lendogram</h5>
             <h6 class="card-subtitle mb-2 text-muted">International Co-op</h6>
