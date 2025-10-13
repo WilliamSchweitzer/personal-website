@@ -1,50 +1,31 @@
 {
-  "name": "will-schweitzer-personal-website",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "personal-website",
   "version": "0.1.0",
-  "author": "Will Schweitzer <weschweitzer@outlook.com>",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\""
+  },
   "dependencies": {
-    "@popperjs/core": "^2.11.5",
-    "bootstrap": "^4.6.1",
-    "gatsby": "^2.21.37",
-    "gatsby-image": "^2.4.4",
-    "gatsby-plugin-manifest": "^2.4.5",
-    "gatsby-plugin-offline": "^3.2.3",
-    "gatsby-plugin-react-helmet": "^3.3.1",
-    "gatsby-plugin-sharp": "^2.6.4",
-    "gatsby-source-filesystem": "^2.3.4",
-    "gatsby-transformer-sharp": "^2.5.2",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.16.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-bootstrap": "^1.0.1",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0",
-    "react-pdf": "^4.1.0"
+    "next": "15.5.5",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.5",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
