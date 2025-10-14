@@ -16,6 +16,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+/coverage
 
 # nyc test coverage
 .nyc_output
@@ -58,12 +59,29 @@ typings/
 .cache/
 public
 
+# Next files
+/.next/
+/out/
+
 # Mac files
 .DS_Store
+*.pem
 
 # Yarn
 yarn-error.log
 .pnp/
 .pnp.js
+
 # Yarn Integrity file
 .yarn-integrity
+
+# Production
+/build
+.env*.local
+
+# Vercel
+.vercel
+
+# TypeScript
+.tsbuild info
+next-env.d.ts

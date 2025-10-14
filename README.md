@@ -1,3 +1,6 @@
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0514836c-9691-4b6f-807f-a43e12131b1a/deploy-status)](https://app.netlify.com/projects/willschweitzer/deploys)
+
 ## Purpose
 The intention of this website is to showcase my resume, skills, and personal projects. The website is built with best practices in mind following the JAMstack model. The server hosted at my home lab is written in Go for personal learning purposes.
 ## Framework
@@ -72,5 +75,3 @@ my-website/
 ## Future Plans
 
 **Next projects will be to create a MCP Server for my website allowing Claude to interact and with it and change it in real time.**
-
-
