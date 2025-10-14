@@ -100,7 +100,7 @@ export default function Home() {
           Building a personal portfolio site to showcase my projects and skills. 
           This is a full-stack learning project featuring Next.js with TypeScript 
           on the frontend, a custom Go server in my home lab, and MongoDB for data 
-          storage. I\'m following modern best practices and planning to integrate an 
+          storage. I\&apos;m following modern best practices and planning to integrate an 
           MCP Server that lets Claude AI interact with the site in real-time. Check 
           back soon!
         </p>
