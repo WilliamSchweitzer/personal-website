@@ -1,5 +1,4 @@
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0514836c-9691-4b6f-807f-a43e12131b1a/deploy-status)](https://app.netlify.com/projects/willschweitzer/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/142ee7f3-ecab-42d0-b80e-85864c96c3f2/deploy-status)](https://app.netlify.com/projects/ws-personal-website/deploys)
 
 ## Purpose
 The intention of this website is to showcase my resume, skills, and personal projects. The website is built with best practices in mind following the JAMstack model. The server hosted at my home lab is written in Go for personal learning purposes.
