@@ -7,11 +7,11 @@ interface ButtonProps {
   disabled?: boolean;
 }
 
-export function Button({ 
-  children, 
-  onClick, 
+export function Button({
+  children,
+  onClick,
   variant = 'primary',
-  disabled = false 
+  disabled = false,
 }: ButtonProps) {
   const baseStyles = 'px-4 py-2 rounded-lg font-medium transition-colors';
   const variantStyles = {
