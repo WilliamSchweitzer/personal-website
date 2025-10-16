@@ -8,15 +8,17 @@ export function Hero() {
   const title = 'Software Engineer';
   const totalNameLength = name.length;
   const totalTitleLength = title.length;
-  const titleStartTime = name.length * 0.05 + 0.3;
-  const titleAnimationEnd = titleStartTime + title.length * 0.05 + 0.5;
-
-  const arrowFinishTime = titleAnimationEnd;
-
+  
+  // Typing animation timings
+  const nameTypingDuration = name.length * 0.1; // 0.1s per character
+  const titleStartDelay = nameTypingDuration + 0.5; // Start title after name + pause
+  const titleTypingDuration = title.length * 0.1;
+  const arrowStartDelay = titleStartDelay + titleTypingDuration + 0.5;
+  
   const photoDelays = [
-    arrowFinishTime,
-    arrowFinishTime + 0.2,
-    arrowFinishTime + 0.4,
+    arrowStartDelay + 0.5,
+    arrowStartDelay + 0.7,
+    arrowStartDelay + 0.9,
   ];
 
   const photos = [
@@ -31,7 +33,7 @@ export function Hero() {
         {/* Animated name and title */}
         <div className="perspective-1000 text-center">
           <h1
-            className="font-bold tracking-tight sm:tracking-wide mb-2"
+            className="font-bold tracking-tight sm:tracking-wide mb-2 font-mono"
             style={{ fontSize: 'clamp(1.75rem, 7vw, 3rem)' }}
           >
             {name.split('').map((char, index) => {
@@ -41,7 +43,7 @@ export function Hero() {
                   key={`name-${index}`}
                   className="inline-block opacity-0"
                   style={{
-                    animation: `fadeInLetter 0.5s ease-out ${index * 0.05}s forwards`,
+                    animation: `typeIn 0.1s ease-out ${index * 0.1}s forwards`,
                     background: `linear-gradient(90deg, rgb(37, 99, 235) 0%, rgb(147, 51, 234) 50%, rgb(219, 39, 119) 100%)`,
                     backgroundPosition: `${gradientPosition}% 0`,
                     backgroundSize: `${totalNameLength * 100}% 100%`,
@@ -54,10 +56,19 @@ export function Hero() {
                 </span>
               );
             })}
+            {/* Blinking cursor after name */}
+            <span
+              className="inline-block border-r-4 border-blue-600 ml-1"
+              style={{
+                animation: `blinkCursor 0.8s step-end ${nameTypingDuration}s 3, fadeOut 0.3s ease-out ${nameTypingDuration + 2.4}s forwards`,
+              }}
+            >
+              &nbsp;
+            </span>
           </h1>
 
           <div className="relative inline-block">
-            <p className="text-xl md:text-2xl font-light tracking-wider">
+            <p className="text-xl md:text-2xl font-light tracking-wider font-mono">
               {title.split('').map((char, index) => {
                 const gradientPosition = (index / totalTitleLength) * 100;
                 return (
@@ -65,7 +76,7 @@ export function Hero() {
                     key={`title-${index}`}
                     className="inline-block opacity-0"
                     style={{
-                      animation: `fadeInLetter 0.5s ease-out ${titleStartTime + index * 0.05}s forwards`,
+                      animation: `typeIn 0.1s ease-out ${titleStartDelay + (index * 0.1)}s forwards`,
                       background: `linear-gradient(90deg, rgb(37, 99, 235) 0%, rgb(147, 51, 234) 50%, rgb(219, 39, 119) 100%)`,
                       backgroundPosition: `${gradientPosition}% 0`,
                       backgroundSize: `${totalTitleLength * 100}% 100%`,
@@ -78,14 +89,26 @@ export function Hero() {
                   </span>
                 );
               })}
+              {/* Blinking cursor after title - stays forever */}
+              <span
+                className="inline-block border-r-4 border-purple-600 ml-1"
+                style={{
+                  animation: `blinkCursor 0.8s step-end ${titleStartDelay + titleTypingDuration}s infinite`,
+                }}
+              >
+                &nbsp;
+              </span>
             </p>
 
             {/* Animated Arrow */}
             <div className="absolute left-0 top-full mt-2 w-full h-8">
               <svg
-                className="w-full h-full"
+                className="w-full h-full opacity-0"
                 viewBox="0 0 200 20"
                 preserveAspectRatio="none"
+                style={{
+                  animation: `fadeIn 0.5s ease-out ${arrowStartDelay}s forwards`,
+                }}
               >
                 <defs>
                   <linearGradient
@@ -110,7 +133,7 @@ export function Hero() {
                   style={{
                     strokeDasharray: '220',
                     strokeDashoffset: '220',
-                    animation: `drawArrow ${titleAnimationEnd}s ease-out forwards`,
+                    animation: `drawArrow 1.5s ease-out ${arrowStartDelay}s forwards`,
                   }}
                 />
               </svg>
@@ -138,7 +161,12 @@ export function Hero() {
             ))}
           </div>
         </div>
-        <div className="text-center">
+        <div 
+          className="text-center opacity-0"
+          style={{
+            animation: `fadeIn 0.8s ease-out ${photoDelays[2] + 0.8}s forwards`,
+          }}
+        >
           <p className="text-lg text-gray-600 dark:text-gray-400">
             Currently:{' '}
             <span className="font-semibold text-gray-900 dark:text-gray-100">
