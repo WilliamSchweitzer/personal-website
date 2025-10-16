@@ -10,8 +10,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'William Schweitzer | Software Engineer',
-  description: 'Portfolio of William Schweitzer, Software Engineer specializing in monitoring, observability, and infrastructure',
+  title: 'Will Schweitzer | Software Engineer',
+  description: 'Portfolio of Will Schweitzer, Software Engineer specializing in monitoring, observability, and infrastructure',
 };
 
 export default function RootLayout({

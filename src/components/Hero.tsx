@@ -4,7 +4,7 @@ import { Button } from '@/components/Button';
 import Image from 'next/image';
 
 export function Hero() {
-  const name = 'William Schweitzer';
+  const name = 'Will Schweitzer';
   const title = 'Software Engineer';
   const totalNameLength = name.length;
   const totalTitleLength = title.length;
