@@ -20,14 +20,16 @@ export function NetworkBackground() {
           className="absolute w-px h-full opacity-40"
           style={{
             left: line.left,
-            background: 'linear-gradient(180deg, transparent, rgba(96, 165, 250, 0.5), transparent)',
+            background:
+              'linear-gradient(180deg, transparent, rgba(96, 165, 250, 0.5), transparent)',
           }}
         >
           {/* Animated pulse traveling down */}
           <div
             className="absolute w-1 h-20 -translate-x-1/2"
             style={{
-              background: 'linear-gradient(180deg, transparent, rgba(96, 165, 250, 0.8), transparent)',
+              background:
+                'linear-gradient(180deg, transparent, rgba(96, 165, 250, 0.8), transparent)',
               boxShadow: '0 0 10px rgba(96, 165, 250, 0.6)',
               animation: `slideDown ${line.duration} linear ${line.delay} infinite`,
             }}

@@ -28,9 +28,9 @@ export function Hero() {
   return (
     <section className="flex flex-col items-center justify-center p-8 md:px-24 md:pt-24 md:pb-12 pt-32">
       <div className="max-w-4xl w-full space-y-16">
-        {/* Animated name and title */ }
+        {/* Animated name and title */}
         <div className="perspective-1000 text-center">
-          <h1 
+          <h1
             className="font-bold tracking-tight sm:tracking-wide mb-2"
             style={{ fontSize: 'clamp(1.75rem, 7vw, 3rem)' }}
           >
