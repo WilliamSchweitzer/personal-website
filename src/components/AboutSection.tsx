@@ -92,9 +92,13 @@ export function AboutSection() {
       className="flex items-center justify-center p-8 md:p-24 pt-0"
     >
       <div className="max-w-4xl w-full">
-        <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+        <h2 className="text-4xl font-bold mb-2 text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
           About Me
         </h2>
+
+        <p className="text-center text-gray-600 dark:text-gray-400 mb-8">
+          Get to know me better
+        </p>
 
         <div className="space-y-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
           <p>
