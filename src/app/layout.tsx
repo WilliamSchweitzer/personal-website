@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   title: 'Will Schweitzer | Software Engineer',
   description:
     'Portfolio of Will Schweitzer, Software Engineer specializing in monitoring, observability, and infrastructure',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
 };
 
 export default function RootLayout({
