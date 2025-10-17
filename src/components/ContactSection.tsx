@@ -37,7 +37,7 @@ export function ContactSection() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center p-4 md:py-12 md:px-24"
+      className="min-h-screen flex items-center justify-center p-4 md:py-12 md:px-24 bg-gray-50/50 dark:bg-gray-800/50"
     >
       <div className="max-w-4xl w-full">
         <h2 className="text-4xl font-bold mb-2 text-center bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
