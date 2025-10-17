@@ -33,7 +33,6 @@ export default function Home() {
 
         {/* Contact Section */}
         <ContactSection />
-        
       </main>
     </>
   );

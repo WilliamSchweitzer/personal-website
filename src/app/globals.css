@@ -10,7 +10,6 @@ div[id] {
   scroll-margin-top: 4rem;
 }
 
-
 /* Blinking cursor using Tailwind utility */
 @keyframes blink {
   0%,

@@ -60,7 +60,10 @@ export function Hero() {
   const totalTitleLength = title.length;
 
   return (
-    <section id="home" className="flex flex-col items-center justify-center p-8 md:px-24 md:pt-24 md:pb-12">
+    <section
+      id="home"
+      className="flex flex-col items-center justify-center p-8 md:px-24 md:pt-24 md:pb-12"
+    >
       <div className="max-w-4xl w-full space-y-16">
         {/* Animated name and title */}
         <div className="perspective-1000 text-center">

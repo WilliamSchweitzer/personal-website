@@ -49,19 +49,23 @@ export function ContactSection() {
 
         {/* Contact Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {contactMethods.map((method) => {
+          {contactMethods.map(method => {
             const Icon = method.icon;
             return (
               <a
                 key={method.label}
                 href={method.href}
                 target={method.label !== 'Email' ? '_blank' : undefined}
-                rel={method.label !== 'Email' ? 'noopener noreferrer' : undefined}
+                rel={
+                  method.label !== 'Email' ? 'noopener noreferrer' : undefined
+                }
                 className="group relative p-6 bg-white dark:bg-gray-800 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-transparent transition-all duration-300 hover:scale-105 hover:shadow-xl"
               >
                 {/* Gradient background on hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${method.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl`} />
-                
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${method.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl`}
+                />
+
                 {/* Content */}
                 <div className="relative z-10">
                   <Icon className="w-12 h-12 mb-4 text-gray-700 dark:text-gray-300 group-hover:text-white transition-colors duration-300" />
@@ -75,17 +79,17 @@ export function ContactSection() {
 
                 {/* Arrow icon */}
                 <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <svg 
-                    className="w-5 h-5 text-white" 
-                    fill="none" 
-                    stroke="currentColor" 
+                  <svg
+                    className="w-5 h-5 text-white"
+                    fill="none"
+                    stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round" 
-                      strokeWidth={2} 
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" 
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                     />
                   </svg>
                 </div>
