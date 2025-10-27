@@ -1,5 +1,10 @@
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiReact } from 'react-icons/si';
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiReact,
+} from 'react-icons/si';
 import { IconType } from 'react-icons';
 
 interface Technology {
@@ -48,7 +53,7 @@ export function ProjectsSection() {
 
         <div className="space-y-8">
           {/* Project Cards */}
-          {projects.map((project) => (
+          {projects.map(project => (
             <div
               key={project.title}
               className="group relative bg-white dark:bg-gray-800 rounded-xl border-2 border-gray-200 dark:border-gray-700 overflow-hidden hover:border-transparent hover:shadow-2xl transition-all duration-300"
@@ -99,7 +104,7 @@ export function ProjectsSection() {
                     Built With
                   </h4>
                   <div className="flex flex-wrap gap-3">
-                    {project.technologies.map((tech) => {
+                    {project.technologies.map(tech => {
                       const Icon = tech.icon;
                       return (
                         <span
@@ -139,8 +144,8 @@ export function ProjectsSection() {
                 More Projects Coming Soon
               </h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Currently working on exciting new projects involving Go, MongoDB,
-                and AI integration. Stay tuned!
+                Currently working on exciting new projects involving Go,
+                MongoDB, and AI integration. Stay tuned!
               </p>
             </div>
           </div>
