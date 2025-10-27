@@ -4,8 +4,13 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiReact,
+  SiLinux,
+  SiPython,
+  SiNginx,
+  SiFlask,
 } from 'react-icons/si';
 import { IconType } from 'react-icons';
+import Image from 'next/image';
 
 interface Technology {
   name: string;
@@ -23,6 +28,20 @@ interface Project {
 
 export function ProjectsSection() {
   const projects: Project[] = [
+    {
+      title: 'Home Lab Raspberry Pi Server',
+      description:
+        'Self-hosted NGINX web server running on Raspberry Pi with custom DDNS solution and MCP Server integration. Built a custom Dynamic DNS updater (adapted from Cloudflare template) that updates Netlify DNS A records via cron job, enabling HTTPS hosting on a custom subdomain with SSL certificates managed through Certbot. Domain registered via AWS Route 53. Includes a Flask dashboard for real-time system monitoring and an MCP Server Playground demonstrating AI agent integration with controlled file system access—showcasing secure LLM interaction with production infrastructure.',
+      technologies: [
+        { name: 'Linux', icon: SiLinux },
+        { name: 'Python', icon: SiPython },
+        { name: 'NGINX', icon: SiNginx },
+        { name: 'Flask', icon: SiFlask },
+      ],
+      github: 'https://github.com/WilliamSchweitzer/netlify-ddns-updater',
+      live: 'https://rp1.wschweitzer.com',
+      image: '/raspberry-pi-homelab-composite.png',
+    },
     {
       title: 'Personal Portfolio Website',
       description:
@@ -63,59 +82,77 @@ export function ProjectsSection() {
               <div className="absolute inset-[2px] bg-white dark:bg-gray-800 rounded-xl z-0" />
 
               {/* Content */}
-              <div className="relative z-10 p-6 md:p-8">
-                {/* Title and Links */}
-                <div className="flex items-start justify-between mb-4">
-                  <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
-                    {project.title}
-                  </h3>
-                  <div className="flex gap-3 flex-shrink-0 ml-4">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
-                      aria-label="View source code on GitHub"
-                    >
-                      <FaGithub className="w-6 h-6 text-gray-700 dark:text-gray-300" />
-                    </a>
-                    {project.live && (
+              <div className="relative z-10">
+                {/* Image Section - Only render if image exists */}
+                {project.image && (
+                  <div className="relative w-full h-64 md:h-80 overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt={`${project.title} preview`}
+                      fill
+                      className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
+                    />
+                    {/* Overlay gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                )}
+
+                {/* Text Content */}
+                <div className="p-6 md:p-8">
+                  {/* Title and Links */}
+                  <div className="flex items-start justify-between mb-4">
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                      {project.title}
+                    </h3>
+                    <div className="flex gap-3 flex-shrink-0 ml-4">
                       <a
-                        href={project.live}
+                        href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
-                        aria-label="View live project"
+                        aria-label="View source code on GitHub"
                       >
-                        <FaExternalLinkAlt className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+                        <FaGithub className="w-6 h-6 text-gray-700 dark:text-gray-300" />
                       </a>
-                    )}
-                  </div>
-                </div>
-
-                {/* Description */}
-                <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
-                  {project.description}
-                </p>
-
-                {/* Technologies */}
-                <div>
-                  <h4 className="text-sm font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-3">
-                    Built With
-                  </h4>
-                  <div className="flex flex-wrap gap-3">
-                    {project.technologies.map(tech => {
-                      const Icon = tech.icon;
-                      return (
-                        <span
-                          key={tech.name}
-                          className="flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-700 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600"
+                      {project.live && (
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
+                          aria-label="View live project"
                         >
-                          <Icon className="w-4 h-4" />
-                          {tech.name}
-                        </span>
-                      );
-                    })}
+                          <FaExternalLinkAlt className="w-5 h-5 text-gray-700 dark:text-gray-300" />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  {/* Technologies */}
+                  <div>
+                    <h4 className="text-sm font-semibold text-gray-600 dark:text-gray-400 uppercase tracking-wide mb-3">
+                      Built With
+                    </h4>
+                    <div className="flex flex-wrap gap-3">
+                      {project.technologies.map(tech => {
+                        const Icon = tech.icon;
+                        return (
+                          <span
+                            key={tech.name}
+                            className="flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-700 rounded-lg text-sm font-medium text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600"
+                          >
+                            <Icon className="w-4 h-4" />
+                            {tech.name}
+                          </span>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
               </div>
