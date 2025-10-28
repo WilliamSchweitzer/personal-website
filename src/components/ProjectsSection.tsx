@@ -23,7 +23,7 @@ interface Project {
   title: string;
   description: string;
   technologies: Technology[];
-  github: string;
+  github?: string;
   live?: string;
   image?: string;
 }
