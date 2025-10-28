@@ -158,7 +158,7 @@ export function ExperienceSection() {
       description:
         'Gained foundational web development experience building features for a fintech startup. Worked with Ruby on Rails to develop full-stack web applications, learning software engineering fundamentals and best practices.',
       responsibilities: [
-	'Collaborated with CEO and lead developer to implement features and resolve bugs',
+        'Collaborated with CEO and lead developer to implement features and resolve bugs',
       ],
       technologies: ['Ruby', 'Ruby on Rails', 'HTML', 'CSS', 'Git', 'SQL'],
     },

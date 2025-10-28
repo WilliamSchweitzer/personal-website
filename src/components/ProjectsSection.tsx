@@ -8,6 +8,8 @@ import {
   SiPython,
   SiNginx,
   SiFlask,
+  SiDocker,
+  SiRaspberrypi,
 } from 'react-icons/si';
 import { IconType } from 'react-icons';
 import Image from 'next/image';
@@ -37,10 +39,24 @@ export function ProjectsSection() {
         { name: 'Python', icon: SiPython },
         { name: 'NGINX', icon: SiNginx },
         { name: 'Flask', icon: SiFlask },
+        { name: 'Raspberry Pi', icon: SiRaspberrypi },
       ],
       github: 'https://github.com/WilliamSchweitzer/netlify-ddns-updater',
       live: 'https://rp1.wschweitzer.com',
       image: '/raspberry-pi-homelab-composite.png',
+    },
+    {
+      title: 'Obsidian Remote Docker Container Hosted on Raspberry Pi',
+      description:
+        'Configured NGINX on a Raspberry Pi 3B+ to reverse proxy requests from `/obsidian/` to a locally hosted Obsidian container running via Docker Compose on internal port `3000`. The container uses the ARM64-compatible image `lscr.io/linuxserver/obsidian:latest` and runs within the custom `npm-network` for isolated routing. Due to resource constraints, I simply SSH into `rp1` at my homelab, start the Docker service with `systemctl start docker`, and run `docker compose up -d` in the `obsidian-remote` project folder. Now I can access my notes from anywhere! The NGINX configuration handles WebSocket connections and standard HTTP forwarding seamlessly.',
+      technologies: [
+        { name: 'Linux', icon: SiLinux },
+        { name: 'Docker', icon: SiDocker },
+        { name: 'NGINX', icon: SiNginx },
+        { name: 'Raspberry Pi', icon: SiRaspberrypi },
+      ],
+      live: 'https://rp1.wschweitzer.com/obsidian/',
+      image: '/obsidian-remote.png',
     },
     {
       title: 'Personal Portfolio Website',
