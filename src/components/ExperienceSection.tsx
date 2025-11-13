@@ -104,11 +104,14 @@ export function ExperienceSection() {
       description:
         "Serve as an Operations Reliability Engineer supporting multiple teams within Kroger's Product domain, ensuring the reliability and performance of their nationwide web and mobile applications that serve millions of customers daily. Architect and maintain monitoring solutions, troubleshoot production issues, and implement observability best practices across distributed systems.",
       responsibilities: [
-        'Design and implement comprehensive monitoring solutions using Grafana, Dynatrace, and ELK Stack to ensure application reliability and performance',
-        'Monitor and troubleshoot Kubernetes pods through Rancher, performing redeployments and scaling operations to maintain service availability',
-        'Collaborate with development teams to establish SLOs and improve system observability across the platform',
-        'Troubleshoot production incidents using log analysis and implement preventive measures to reduce downtime',
-        'Support CI/CD pipelines using Harness and GCP infrastructure',
+        "Design and implement enterprise monitoring solutions using Dynatrace, Grafana, and the ELK Stack, ensuring 99.9% service uptime across Kroger’s Product and PreOrder domains",
+        'Lead Product Operations Reliability Engineering team members through knowledge enrichment and transition phases',
+        'Collaborate with development teams to establish SLOs and ensure full observability coverage across on premises and cloud infrastructure',
+        'Troubleshoot and monitor Kubernetes deployments through Rancher, performing redeploys, scaling operations, and log analysis across distributed microservices architectures',
+        'Automate ServiceNow incident resolution steps with Python to reduce MTTR and improve team efficiency',
+        'Triage and resolve P4-P1 production incidents that arise in Kroger’s production applications/services',
+        'Configure Grafana, ELK, and Dynatrace SaaS alarms to trigger incidents in ServiceNow and ensure low MTTD',
+        'Write standard operating procedures to share knowledge and ensure consistent high reliability',
       ],
       technologies: [
         'Grafana',
@@ -131,9 +134,13 @@ export function ExperienceSection() {
       description:
         "Contributed to the Web Development team building Fox Sports' large-scale, data-driven web platform serving millions of sports fans. Worked in an Agile/Scrum environment, collaborating with cross-functional teams to deliver high-priority features and maintain the production site.",
       responsibilities: [
-        'Developed and maintained features for the Fox Sports website using React/Preact and Redux for state management',
-        'Implemented responsive UI components with TypeScript, HTML, and CSS',
-        'Participated in code reviews and sprint planning, contributing to team velocity improvements',
+        'Substantially improved my ability to work as a team with Agile (scrum) process',
+        'Gained strong experience building data-driven applications using .NET, C#, Preact, and Typescript',
+        'Implemented Preact Components for the Fox Sports streaming migration using Typescript',
+        'Created stats pages for the 2019 FIFA Women’s World Cup using .NET, C#, HTML, and LESS',
+        'Upgraded the 2019 FIFA Women’s World Cup Team USA Schedule and Group Widget',
+        'Redesigned the NCAA March Madness bracket',
+        'Implemented the 2018 FIFA Men’s World Cup Schedule Widget',
       ],
       technologies: [
         '.NET Framework',
