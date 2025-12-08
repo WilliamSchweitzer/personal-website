@@ -10,6 +10,11 @@ import {
   SiFlask,
   SiDocker,
   SiRaspberrypi,
+  SiGo,
+  SiPostgresql,
+  SiTerraform,
+  SiAmazonwebservices,
+  SiKong,
 } from 'react-icons/si';
 import { IconType } from 'react-icons';
 import Image from 'next/image';
@@ -30,6 +35,25 @@ interface Project {
 
 export function ProjectsSection() {
   const projects: Project[] = [
+    {
+      title: 'Full-Stack Task Management Application',
+      description:
+        'A cloud-native task management platform built with a Go microservices architecture, featuring separate authentication and task services. The backend uses PostgreSQL for data persistence and implements JWT-based authentication with refresh token rotation for secure user sessions. The frontend is built with Next.js and TypeScript, providing a modern, responsive interface. Infrastructure is deployed on AWS ECS Fargate using Terraform for Infrastructure as Code, with Kong API Gateway handling routing, rate limiting, and request validation across microservices.',
+      technologies: [
+        { name: 'Go', icon: SiGo },
+        { name: 'PostgreSQL', icon: SiPostgresql },
+        { name: 'TypeScript', icon: SiTypescript },
+        { name: 'Next.js', icon: SiNextdotjs },
+        { name: 'React', icon: SiReact },
+        { name: 'Docker', icon: SiDocker },
+        { name: 'Terraform', icon: SiTerraform },
+        { name: 'AWS ECS', icon: SiAmazonwebservices },
+        { name: 'Kong', icon: SiKong },
+      ],
+      github: 'https://github.com/WilliamSchweitzer/task-management-app',
+      live: 'https://task-management.wschweitzer.com',
+      image: '/task-management-app.png',
+    },
     {
       title: 'Home Lab Raspberry Pi Server',
       description:
@@ -122,15 +146,17 @@ export function ProjectsSection() {
                       {project.title}
                     </h3>
                     <div className="flex gap-3 flex-shrink-0 ml-4">
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
-                        aria-label="View source code on GitHub"
-                      >
-                        <FaGithub className="w-6 h-6 text-gray-700 dark:text-gray-300" />
-                      </a>
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
+                          aria-label="View source code on GitHub"
+                        >
+                          <FaGithub className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+                        </a>
+                      )}
                       {project.live && (
                         <a
                           href={project.live}
